@@ -1,0 +1,44 @@
+form {
+    padding: 2rem 5rem;
+    border: 2px solid red;
+    border-radius: 2em;
+    width: 50%;
+    margin: auto;
+    box-shadow: inset 0 10px 10px, 0 10px 20px;
+}
+
+.col {
+    display: inline-block;
+}
+
+input,
+textarea {
+    padding: 0.5em;
+    border-radius: 0.25em;
+    border: none;
+    outline: 1px solid gray;
+}
+
+input:focus,
+textarea:focus {
+    border: none;
+    outline: 1px solid steelblue;
+}
+
+input[type="address"],
+input[type="postal"] {
+    width: 100%;
+}
+
+.btn-box {
+    text-align: center;
+}
+
+button {
+    padding: 0.75em 2.5em;
+    border: none;
+    border-radius: 0.25em;
+    background: rgba(55, 150, 100, 0.7);
+    color: rgba(220, 200, 150, 1);
+    cursor: pointer;
+}

@@ -1,0 +1,83 @@
+* {
+    font-family: "Montserrat";
+}
+
+/* dewscendant selector */
+/* div p,
+.header {
+    color: red;
+} */
+
+/* child selector */
+div > p {
+    color: orangered;
+    border: 2px solid darkblue;
+    padding: 0.875rem;
+}
+
+/* adjacent sibling selector */
+div > p + p {
+    color: slateblue;
+}
+
+/* general sibling selector */
+div p ~ p {
+    color: darkgreen;
+}
+
+h1 {
+    transition: all 0.5s ease;
+    position: relative;
+}
+
+h1:hover {
+    background: yellow;
+}
+
+h1::after {
+    content: "";
+    display: block;
+    height: 5px;
+    background-color: red;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+
+    transition: width 1s linear;
+}
+
+h1:hover::after {
+    width: 100%;
+}
+
+input[type="text"] {
+    border: 5px solid;
+}
+
+input[type="text"]::placeholder {
+    color: darkgreen;
+    font-weight: bold;
+}
+
+.container {
+    border: 5px solid red;
+    width: 50%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.box {
+    background-color: steelblue;
+    border: 1px solid slateblue;
+    color: #fff;
+    font-size: 2rem;
+    width: 100px;
+}
+
+.box:nth-child(2) {
+    background-color: darkblue;
+}

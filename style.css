@@ -1,0 +1,36 @@
+td:hover,
+th:hover {
+    color: steelblue;
+    background-color: #333;
+    cursor: pointer;
+}
+
+#table-data {
+    text-align: center;
+    color: orangered;
+}
+
+.tdata {
+    color: blueviolet;
+    font-size: 1.2rem;
+    padding: 3px;
+    text-align: center;
+}
+
+table {
+    border: 2px solid;
+    border-radius: 10px;
+    padding: 0.5em;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 2px solid red;
+    padding: 0.5em;
+    text-align: center;
+}
+
+iframe {
+    object-fit: contain;
+}
